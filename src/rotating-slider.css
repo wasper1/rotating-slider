@@ -1,0 +1,121 @@
+input[type='number'].rotating-slider-input {
+    -moz-appearance: textfield;
+}
+
+input.rotating-slider-input::-webkit-outer-spin-button,
+input.rotating-slider-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.rotating-slider-input {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-align: center;
+    padding: 0;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: -1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.rotating-slider {
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    height: 2.5em;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+}
+
+.rotating-slider-top {
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    height: 0.75em;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+}
+
+.rotating-slider-left-hidden {
+    position: absolute;
+    left: 5%;
+    opacity: 0;
+}
+
+.rotating-slider-left {
+    position: absolute;
+    left: 0%;
+    opacity: 0.1;
+    top: 0.5em;
+    margin: auto;
+    height: 1em;
+}
+
+.rotating-slider-center-left {
+    position: absolute;
+    left: 15%;
+    opacity: 0.3;
+    top: 0.25em;
+    margin: auto;
+    height: 1em;
+}
+
+.rotating-slider-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    height: 1em;
+    opacity: 0.5;
+}
+
+.rotating-slider-center.rotating-slider-value-stable {
+    font-size: 1.2em;
+    opacity: 1;
+    -webkit-transition: font-size 0.2s linear, opacity 0.2s linear;
+    -moz-transition: font-size 0.2s linear, opacity 0.2s linear;
+    -o-transition: font-size 0.2s linear, opacity 0.2s linear;
+    transition: font-size 0.2s linear, opacity 0.2s linear;
+}
+
+.rotating-slider-center-right {
+    position: absolute;
+    right: 15%;
+    opacity: 0.3;
+    top: 0.25em;
+    margin: auto;
+    height: 1em;
+
+}
+
+.rotating-slider-right {
+    position: absolute;
+    right: 0;
+    opacity: 0.1;
+    top: 0.5em;
+    margin: auto;
+    height: 1em;
+}
+
+.rotating-slider-right-hidden {
+    position: absolute;
+    right: 5%;
+    opacity: 0;
+}
