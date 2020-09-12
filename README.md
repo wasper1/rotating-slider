@@ -1,0 +1,2 @@
+# rotating-slider
+Rotating slider
