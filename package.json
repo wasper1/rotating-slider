@@ -1,0 +1,31 @@
+{
+  "name": "rotating-slider",
+  "version": "1.0.0",
+  "description": "Rotating slider for selecting numerical values. Allows mobile friendly precise selection for value from selected range with desired step.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasper1/rotating-slider.git"
+  },
+  "keywords": [
+    "rotating",
+    "slider",
+    "mobile",
+    "numeric",
+    "phonegap",
+    "cordova",
+    "ionic"
+  ],
+  "author": "Jakub Osika",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wasper1/rotating-slider/issues"
+  },
+  "homepage": "https://github.com/wasper1/rotating-slider#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

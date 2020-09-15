@@ -1,3 +1,7 @@
+if(typeof require !== 'undefined') {
+    var $ = require('jquery');
+}
+
 (function () {
     'use strict';
     var RotatingSlider = function () {
@@ -104,9 +108,9 @@
     };
 
 
-    RotatingSlider.prototype.create = function (element, dataModel, initValue) {
+    RotatingSlider.prototype.create = function (elementCssSelector, dataModel, initValue) {
         var rotatingSlider = new RotatingSlider();
-        rotatingSlider.init(element, dataModel, initValue);
+        rotatingSlider.init($(elementCssSelector), dataModel, initValue);
         return rotatingSlider;
     }
 
@@ -491,6 +495,7 @@
     if (!window.RotatingSlider) {
         window.RotatingSlider = RotatingSlider.prototype.create;
     }
-    ;
 
 })();
+
+module.exports = RotatingSlider;

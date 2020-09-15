@@ -7,16 +7,16 @@ Component is especially useful for hybrid application using frameworks like Ioni
 ## Demo
 Live demo is available [here](https://wasper1.github.io/rotating-slider/)
 
+Production usage [example](https://play.google.com/store/apps/details?id=eu.lifemonitor&hl=en)
 ## Install
 `npm install rotating-slider`
 
 ## Usage
+HTML
 ```
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://wasper1.github.io/rotating-slider/src/rotating-slider.js"></script>
     <link rel="stylesheet" href="https://wasper1.github.io/rotating-slider/src/rotating-slider.css">
 </head>
 <body>
@@ -26,19 +26,22 @@ Live demo is available [here](https://wasper1.github.io/rotating-slider/)
     </div>
     <div>
         Decimal numbers
-        <h1 id="rotating-slider2"/>
+        <h1 style="width: 50%; margin: auto;" id="rotating-slider2"/>
     </div>
-    
-    <script>
-        RotatingSlider($("#rotating-slider1"), {min: 1, max: 100, step: 1}, 10).setChangeCallback(function (val) {
-            console.log(val)
-        });
-        RotatingSlider($("#rotating-slider2"), {min: 1, max: 5, step: 0.5}, 3.5).setChangeCallback(function (val) {
-            console.log(val)
-        });
-    </script>
 </body>
 </html>
+```
+
+js
+```
+import RotatingSlider from 'rotating-slider';
+
+RotatingSlider("#rotating-slider1", {min: 1, max: 100, step: 1}, 10)
+    .setChangeCallback(val => {console.log(val);});
+            
+RotatingSlider("#rotating-slider1", {min: 1, max: 5, step: 0.5}, 3.5)
+    .setChangeCallback(val => {console.log(val);});
+
 ```
 
 ## License
