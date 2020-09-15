@@ -2,6 +2,7 @@
 
 Rotating slider for selecting numerical values.
 Allows mobile friendly precise selection for value from selected range with desired step.
+Component is especially useful for hybrid application using frameworks like Ionic, Cordova or PhoneGap.
 
 ## Demo
 Live demo is available [here](https://wasper1.github.io/rotating-slider/)
@@ -13,6 +14,7 @@ Live demo is available [here](https://wasper1.github.io/rotating-slider/)
 ```
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://wasper1.github.io/rotating-slider/src/rotating-slider.js"></script>
     <link rel="stylesheet" href="https://wasper1.github.io/rotating-slider/src/rotating-slider.css">
